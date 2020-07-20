@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
 #include <PubSubClient.h>
-#include "airtrik.h"
+#include <Airtrik.h>
 
 char* mykey = "__APP_KEY__";
 String ssid = "WIFI__NAME";
@@ -17,7 +17,7 @@ void onReceive(char* deviceId, byte* message, unsigned int length){
   
 }
 
-airtrik iot;
+Airtrik iot;
 
 void setup() {
   iot.connect(ssid, pass, mykey);
