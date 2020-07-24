@@ -73,7 +73,7 @@ void Airtrik::loop(){
   }
 }
 
-Airtrik::airtrik(){
+Airtrik::Airtrik(){
   Serial.println("Importing AIRTRIK IOT CLOUD");
 }
 
