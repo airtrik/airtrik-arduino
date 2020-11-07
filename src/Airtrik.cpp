@@ -100,7 +100,7 @@ void Airtrik::connect(String ssid, String pass, char* key){
   if (WiFi.status() == WL_CONNECTED) {
     const int httpPort = 443;
     HTTPClient http;
-    http.begin("https://airtrik.com/iot/", "04 A7 A8 30 85 FE DB E6 FD 11 16 9A 07 22 BB 78 AC 99 58 8D");
+    http.begin("https://airtrik.com/iot/", "A7 E6 DB 36 9B BD 6F DE 65 FB CD 7E 33 8C 85 49 A4 C2 F0 35");
     http.addHeader("Content-Type", "application/x-www-form-urlencoded");
     String postdata = "key=" + String(key);
     int httpCode = http.POST(postdata);
